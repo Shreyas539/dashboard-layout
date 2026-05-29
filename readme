@@ -1,2 +1,29 @@
-Chakra UI's built-in Table component does not support interactive column resizing "out of the box". To achieve this, you typically need to integrate a dedicated table logic library like TanStack Table (formerly React Table) or manually apply CSS layout properties.Integration with TanStack Table (Recommended)Integrating with TanStack Table is the standard approach for advanced features like resizing, sorting, and pagination.Column Sizing Hook: You can use the useTable hook with the useFlexLayout or useBlockLayout plugin in v7, or native size attributes in v8.Resize Handler: You must render a "drag handle" in your header cells (Th) and attach TanStack's getResizerProps to handle the mouse events.Chakra Styling: You can wrap Chakra's <Table>, <Thead>, and <Th> components around the TanStack logic to maintain the Chakra UI look while gaining resizing functionality.CSS-Based WorkaroundsIf you don't need interactive "drag-to-resize" and just want to control widths:Fixed Layout: To force columns to respect specific widths, apply tableLayout="fixed" to the <Table> component.jsx<Table sx={{ tableLayout: "fixed" }}>
-Use code with caution.Manual Widths: You can set manual widths on individual <Th> or <Td> components using the width or w props.Table Column Group: Use the <Table.ColumnGroup> component to distribute column widths using the HTML <colgroup> element.Specialized LibrariesIf your project requires high-performance or complex data grids, consider these alternatives:Saas UI: Built on top of Chakra UI, its DataGrid component has built-in support for column resizing via the columnResizeEnabled prop.React Table Library: Offers themes specifically designed for Chakra UI and supports features like fixed columns and resizing.
+Chakra UI's built-in Table component does not support interactive column resizing "out of the box". To achieve this, you typically need to integrate a dedicated table logic library like TanStack Table (formerly React Table) or manually apply CSS layout properties. 
+Integration with TanStack Table (Recommended) 
+Integrating with  TanStack Table 
+ is the standard approach for advanced features like resizing, sorting, and pagination. 
+
+• Column Sizing Hook: You can use the  hook with the  or  plugin in v7, or native  attributes in v8. 
+• Resize Handler: You must render a "drag handle" in your header cells () and attach TanStack's  to handle the mouse events. 
+• Chakra Styling: You can wrap Chakra's , , and  components around the TanStack logic to maintain the Chakra UI look while gaining resizing functionality. [2]  
+
+CSS-Based Workarounds 
+If you don't need interactive "drag-to-resize" and just want to control widths: 
+
+• Fixed Layout: To force columns to respect specific widths, apply  to the  component. 
+• Manual Widths: You can set manual widths on individual  or  components using the  or  props. 
+• Table Column Group: Use the  component to distribute column widths using the HTML  element. 
+
+Specialized Libraries 
+If your project requires high-performance or complex data grids, consider these alternatives: 
+
+• Saas UI: Built on top of Chakra UI, its  component has built-in support for column resizing via the  prop. 
+• React Table Library: Offers themes specifically designed for Chakra UI and supports features like fixed columns and resizing. [4]  
+
+AI responses may include mistakes.
+
+[1] https://www.simple-table.com/blog/react-table-column-resizing-guide
+[2] https://www.telerik.com/kendo-angular-ui/components/grid/columns/resizing
+[3] https://jira.atlassian.com/browse/CONFCLOUD-67748
+[4] https://www.robinwieruch.de/react-table-resize/
+
