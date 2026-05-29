@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Ensure this is in your global CSS file */
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* This kills any accidental vertical scrolling */
+}
