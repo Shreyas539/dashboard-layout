@@ -1,0 +1,47 @@
+MOM points, with my comments
+
+1. After hovering on node, right click is not possible because of hover menu
+   Technical Comment: This is standard, Hover menu should not block right-click operations.
+   
+2. Give increase zoomout in the topology
+   Technical comment: *Ask*: What should be the minimum zoom level? Current may be 25%; do they want 10%, 5%, etc.?
+   
+3. Show face icon in logout button
+   Technical comment: Straightforward UI change.
+   
+4. Fix 2 columns at the left side of table, increase font size.
+   Technical Comment: *Ask*: What font size is preferred?
+   
+5. Give a button to disable node hover.
+   Technical comment: *Ask*: Need behaviour definition. Should it be a toggle? Session-based or saved preference? A user preference that persists after login?
+   
+6. Check right click status font sizes, give row per page in the status tables.
+   Technical Comment: Pagination is standard. *Font size may require confirmation*.
+   
+7. Extend the top header to left and add logins icon and BEL logo
+   Technical comment: *Ask*: For exact placement if not already available.
+   
+8. Fix layout overflow on other items
+   Technical comment: This is UI bug issue fix it after getting minimum screen resolution.
+   
+9. Left side scroll for sidebar
+   Technical Comment: UI fix needs to be done from our side
+   
+10. Right click context menu is going out of the screen in topology and sidebar
+    Technical comment: Standard context menu position need to be done from our side.
+    
+11. Right sidebar icons are overflowing
+     Technical Comment: UI fix from our side need to be done
+     
+12. Change topology save icon
+    Technical Comment: *Ask*: Need a replacement icon, suggestion can be given from our side . Same icon that we are using for other NMS project
+    
+13. Checkbox should be static in the alarm table.
+    Technical Comment: *Ask*: Need clarification. Static can mean: fixed column during horizontal scroll or always visible.
+    
+    
+My assessment
+
+You can proceed immediately with 1, 3, 8, 9, 10, and 11 as standard UI fixes.
+
+For 2, 4, 5, 6, 7, 12, and 13, it is better to get clarification to avoid rework.
